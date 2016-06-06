@@ -128,20 +128,56 @@ def open_movies_page(movies):
     # open the output file in the browser (in a new tab, if possible)
     url = os.path.abspath(output_file.name)
     webbrowser.open('file://' + url, new=2)
+
+# the following are the movie instances
     
-showgirls = media.Movie("https://youtu.be/gszDLDFwcLk","Show Girls","https://thenypost.files.wordpress.com/2016/06/bechdel.jpg?quality=90&strip=all&w=664&h=441&crop=1")
-approach_unknow=media.Movie("https://youtu.be/CQx2eosUlXY","Approaching the Unknown","https://thenypost.files.wordpress.com/2016/06/m45.jpg?quality=90&strip=all&w=664&h=441&crop=1")
-time_to_choose=media.Movie("https://youtu.be/Xj6-oIyXM20","Time to Choose","https://thenypost.files.wordpress.com/2016/06/chinese_masks.jpg?quality=90&strip=all&w=664&h=441&crop=1")
+showgirls = media.Movie(
+    "https://youtu.be/gszDLDFwcLk",
+    "Show Girls",
+    "https://thenypost.files.wordpress.com/2016/06/bechdel.jpg?quality=90&strip=all&w=664&h=441&crop=1") #noqa
 
-the_witness =media.Movie("https://youtu.be/gpU6UVfIQLM","The Witness","https://thenypost.files.wordpress.com/2016/06/kitty_genovese.jpg?quality=90&strip=all&w=664&h=441&crop=1")
-popstar = media.Movie("https://youtu.be/S207jSgL_jw","Popstar","https://thenypost.files.wordpress.com/2016/06/popstar-_never_stop_never_stopping_-2016.jpg?quality=90&strip=all&w=664&h=441&crop=1")
-me_before_you = media.Movie("https://youtu.be/Eh993__rOxA","Me Before You","https://thenypost.files.wordpress.com/2016/06/me_before_you.jpg?quality=90&strip=all&w=664&h=441&crop=1")
+approach_unknow=media.Movie(
+  "https://youtu.be/CQx2eosUlXY",
+  "Approaching the Unknown",
+  "https://thenypost.files.wordpress.com/2016/06/m45.jpg?quality=90&strip=all&w=664&h=441&crop=1") #noqa
 
-monthly_report= media.Movie("https://youtu.be/cbw9hlBnG74","Minority Report","https://thenypost.files.wordpress.com/2016/05/adaptations.jpg?quality=90&strip=all&w=664&h=441&crop=1")
-alice_eyes = media.Movie("https://youtu.be/x3IWwnNe5mc","Alice Through the Looking Glass","https://thenypost.files.wordpress.com/2016/06/gettyimages-533878914.jpg?quality=90&strip=all&w=664&h=441&crop=1")
-top_gun =media.Movie("https://youtu.be/ioWpe3hdFH0","Top Gun","https://thenypost.files.wordpress.com/2016/05/topgun2a.jpg?quality=90&strip=all&strip=all")
+time_to_choose=media.Movie(
+  "https://youtu.be/Xj6-oIyXM20",
+  "Time to Choose",
+  "https://thenypost.files.wordpress.com/2016/06/chinese_masks.jpg?quality=90&strip=all&w=664&h=441&crop=1")#noqa
 
+the_witness =media.Movie(
+  "https://youtu.be/gpU6UVfIQLM",
+  "The Witness",
+  "https://thenypost.files.wordpress.com/2016/06/kitty_genovese.jpg?quality=90&strip=all&w=664&h=441&crop=1")#noqa
 
+popstar = media.Movie(
+  "https://youtu.be/S207jSgL_jw",
+  "Popstar",
+  "https://thenypost.files.wordpress.com/2016/06/popstar-_never_stop_never_stopping_-2016.jpg?quality=90&strip=all&w=664&h=441&crop=1")#noqa
+
+me_before_you = media.Movie(
+  "https://youtu.be/Eh993__rOxA",
+  "Me Before You",
+  "https://thenypost.files.wordpress.com/2016/06/me_before_you.jpg?quality=90&strip=all&w=664&h=441&crop=1")#noqa
+
+monthly_report= media.Movie(
+  "https://youtu.be/cbw9hlBnG74",
+  "Minority Report",
+  "https://thenypost.files.wordpress.com/2016/05/adaptations.jpg?quality=90&strip=all&w=664&h=441&crop=1")#noqa
+
+alice_eyes = media.Movie(
+  "https://youtu.be/x3IWwnNe5mc",
+  "Alice Through the Looking Glass",
+  "https://thenypost.files.wordpress.com/2016/06/gettyimages-533878914.jpg?quality=90&strip=all&w=664&h=441&crop=1")#noqa
+
+top_gun =media.Movie(
+  "https://youtu.be/ioWpe3hdFH0",
+  "Top Gun",
+  "https://thenypost.files.wordpress.com/2016/05/topgun2a.jpg?quality=90&strip=all&strip=all")#noqa
+
+# put movie instances into a list
 movies =[showgirls,approach_unknow,time_to_choose,the_witness,popstar,me_before_you,monthly_report,alice_eyes,top_gun]
 
+# calling open_movies_page() function to generate a html page.
 open_movies_page(movies)
