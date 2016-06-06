@@ -12,6 +12,6 @@
 > use your terminal (Mac) or cmd (Windows) to navigate to your directory
 > and then use following command to generate the html file.
 >
-> python fresh_tomotoes.py
+> *python fresh_tomotoes.py*
 
 > Then you can find and open fresh_tomotoes.html in your directory
